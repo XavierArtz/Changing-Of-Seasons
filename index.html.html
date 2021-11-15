@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+<body style="background-color:Berblue;">
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+background-color:Black;}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+.column img:hover {
+  opacity: 1;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  position: relative;
+  display: none;
+}
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center"
+     style="text-decoration-color: white">
+  <h2 style="color:white"> Changing of Seasons</h2>
+  <p></p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="Photos/October30.JPG" alt="October 27th" style="width:100%" onclick="myFunction(this);">
+      <p style="color:white">OCTOBER 27: Day was gorgeous outside. Before I took this picture I was preparing for a walk in this 15° C day. </p>
+  </div>
+    
+  <div class="column">
+    <img src="Photos/October31.JPG" alt="October 28th" style="width:100%" onclick="myFunction(this);">
+       <p style="color:white">OCTOBER 28:
+Weather was slightly more cold that yesterday, but still warm. I was getting ready for work when I took this photo </p>
+  </div>
+    
+    <div class="column">
+    <img src="Photos/November1.JPG" alt="October 29th" style="width:100%" onclick="myFunction(this);">
+         <p style="color:white">OCTOBER 29 
+Weather is cloudy and windy, I was getting ready to head to the store to buy some stuff for a Halloween party later that night </p>
+  </div>
+    
+    <div class="column">
+    <img src="Photos/November2.JPG" alt="October 30th" style="width:100%" onclick="myFunction(this);">
+ <p style="color:white">OCTOBER 30
+Weather is overcast and cold. I was getting ready for my Saturday shift, I was pretty tired after my Halloween party the day earlier. </p>
+  </div>
+    
+    <div class="column">
+    <img src="Photos/November3.JPG" alt="October 31th" style="width:100%" onclick="myFunction(this);">
+         <p style="color:white">OCTOBER 31 
+Weather is sunny but cold. After this photo I was able to take the train into the city for the first time in a year and a half for </p>
+  </div>
+    
+    <div class="column">
+    <img src="Photos/November4.JPG" alt="November 1st" style="width:100%" onclick="myFunction(this);">
+         <p style="color:white">NOVEMBER 1
+Weather is cloudy. I took this photo in between classes and lectures. I remember was quite ravenous when I took this photo. </p>
+  </div>
+    
+    <div class="column">
+    <img src="Photos/November5.JPG" alt="November 2nd" style="width:100%" onclick="myFunction(this);">
+        <p style="color:white">NOVEMBER 2
+Weather is cloudy. I'm extremely lethargic today and I don't know why. </p>
+  </div>
+    
+    <div class="column">
+    <img src="Photos/November6.JPG" alt="November 3rd" style="width:100%" onclick="myFunction(this);">
+         <p style="color:white">NOVEMBER 3
+Weather is cold and partly cloudy. After this photo I'm going on an errand run to grab prescriptions and a picture frame </p>
+  </div>
+    
+    <div class="column">
+    <img src="Photos/November7.JPG" alt="November 4th" style="width:100%" onclick="myFunction(this);">
+        <p style="color:white">NOVEMBER 4
+Partly cloudy and warmer than yesterday. I took this photo before heading to work. </p>
+  </div>
+    
+    <div class="column">
+    <img src="Photos/November8.JPG" alt="November 5th" style="width:100%" onclick="myFunction(this);">
+        <p style="color:white">NOVEMBER 5
+Sunny and warm. I spent most of the fsy working on school work, and then working at my job </p>
+  </div>
+    
+    <div class="column">
+    <img src="Photos/November9.JPG" alt="November 6th" style="width:100%" onclick="myFunction(this);">
+        <p style="color:white">NOVEMBER 6
+Sunny but cold. I took this photo after renovating my kitchen, I was very tired </p>
+  </div>
+    
+    <div class="column">
+    <img src="Photos/November10.JPG" alt="November 7th" style="width:100%" onclick="myFunction(this);">
+        <p style="color:white">NOVEMBER 7
+Sunny and cold again. I took this photo before going to work. I was also hungry 
+</p>
+  </div>
+    
+    <div class="column">
+    <img src="Photos/November11.JPG" alt="November 8th" style="width:100%" onclick="myFunction(this);">
+        <p style="color:white">NOVEMBER 8
+Cold and cloudy, I took this photo after class. I was extremely drained after class </p>
+  </div>
+    
+     <div class="column">
+    <img src="Photos/November12.JPG" alt="November 9th" style="width:100%" onclick="myFunction(this);">
+          <p style="color:white">NOVEMBER 9
+I took this photo after critique today in class </p>
+  </div>
+    
+     <div class="column">
+    <img src="Photos/November13.JPG" alt="November 10th" style="width:100%" onclick="myFunction(this);">
+         <p style="color:white">NOVEMBER 10
+Weather is cold and sunny. I had to climb over furniture to take this photo due to my renovation</p>
+  </div>
+    
+     <div class="column">
+    <img src="Photos/November14.JPG" alt="November 11th" style="width:100%" onclick="myFunction(this);">
+          <p style="color:white">NOVEMBER 11
+Weather is cloudy and windy, I took this photo just after my fridge arrived</p>
+         
+
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
